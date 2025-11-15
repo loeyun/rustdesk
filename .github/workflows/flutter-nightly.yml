@@ -8,11 +8,11 @@ on:
 
 jobs:
   run-flutter-nightly-build:
-    uses: ./.github/workflows/flutter-build.yml
+    uses: ./.github/workflows/flutter-windows.yml
     secrets: inherit
     with:
       upload-artifact: true
       upload-tag: "nightly"
       # 指定只编译 Windows
-      platform: windows
+      #platform: windows
       
